@@ -55,7 +55,7 @@ function PANEL:OpenMenu( pControlOpener ) --adapted from the original derma menu
 
 	local x, y = self:LocalToScreen( 0, self:GetTall() )
 
-	self.Menu.Paint = function(w, h)
+	self.Menu.Paint = function(self, w, h)
 		draw.RoundedBox(0, 0, 0, w, h, Color(55, 55, 55, 255))
 	end
 	self.Menu:SetMinimumWidth( self:GetWide() )
